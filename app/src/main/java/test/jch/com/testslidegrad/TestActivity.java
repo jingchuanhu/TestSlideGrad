@@ -72,10 +72,11 @@ public class TestActivity extends ActionBarActivity {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked)
-
-                    tv1.startAnimation(getTransIn());
+                    tv1.setVisibility(View.GONE);
+//                    tv1.startAnimation(getTransIn());
                 else
-                    tv1.startAnimation(getTransOut());
+//                    tv1.startAnimation(getTransOut());
+                    tv1.setVisibility(View.VISIBLE);
             }
         });
     }
